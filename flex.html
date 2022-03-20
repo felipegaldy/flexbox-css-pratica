@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 400px;
+            margin: 5px;
+        }
+        .item{
+            background-color:  #222;
+            color: whitesmoke;
+            font-size: 15px;
+            text-align: center;
+            margin: 5px;
+            border: 1px solid powderblue;
+        }
+        .flex-1{
+            flex: 1;
+            /*grow=1, shrink=1, basis=0*/
+        }
+        .largura{
+            width: 200px;
+        }
+        .flex-2{
+            flex: 2;
+            /*grow=2, shrink=1, basis=0*/
+        } 
+    </style>
+</head>
+<body>
+
+    <h1>Flex: 1</h1>
+    <div class="flex-container">
+
+        <div class="item flex-1">Texto teste</div>
+        <div class="item flex-1">Texto teste</div>
+        <div class="item flex-1">Texto teste</div>
+        <div class="item flex-1">Texto teste</div>
+        <div class="item flex-1">Texto teste</div>
+
+    </div>
+
+    <h1>Flex: alternados</h1>
+    <div class="flex-container">
+
+        <div class="item flex-1">Texto teste</div>
+        <div class="item flex-2">Texto teste</div>
+        <div class="item flex-1">Texto teste</div>
+        <div class="item flex-2">Texto teste</div>
+        <div class="item flex-1">Texto teste</div>
+
+    </div>
+
+    <h1>width  ignorado -> basis = 0</h1>
+    <div class="flex-container">
+
+        <div class="item  largura flex-1">Texto teste</div>
+        <div class="item  largura flex-1">Texto teste</div>
+        <div class="item  largura flex-1">Texto teste</div>
+        <div class="item  largura flex-1">Texto teste</div>
+        <div class="item  largura flex-1">Texto teste</div>
+
+    </div>
+    
+</body>
+</html>

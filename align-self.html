@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self</title>
+    <style>
+        .flex-container{
+            display: flex;
+            border: 1px solid black;
+            margin: 5px;
+            max-width: 500px;
+            align-items: center;
+        }
+        .item{
+            background-color: navy;
+            color: whitesmoke;
+            text-align: center;
+            margin: 5px;
+            font-size: 20px;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .fs{
+            align-self: flex-start;
+        }
+        .fe{
+            align-self: flex-end;
+        }
+        .center{
+            align-self: center;
+        }
+        .strecth{
+            align-self: stretch;
+
+        }
+        .baseline{
+            align-self: baseline;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <h1>align-self: auto</h1>
+    <section class="flex-container">
+
+        <div class="item auto">AL</div>
+        <div class="item auto"> SELF</div>
+        <div class="item auto">ALIGN </div>
+        <div class="item auto">IGN SELF</div>
+        <div class="item auto">AL</div>
+
+    </section>
+
+    <h1>align-self: flex-start</h1>
+    <section class="flex-container">
+
+        <div class="item fs">IGN SELF</div>
+        <div class="item fs">ELF</div>
+        <div class="item fs">ALIGN </div>
+        <div class="item fs">ALIGN SELF</div>
+        <div class="item fs">LF</div>
+
+    </section>
+
+    <h1>align-self: end</h1>
+    <div class="flex-container">
+
+        <div class="item fe">ALIF</div>
+        <div class="item fe">GN SELF</div>
+        <div class="item fe">ELF</div>
+        <div class="item fe">ALIGN SELF</div>
+        <div class="item fe">ALIGF</div>
+
+    </div>
+
+    <h1>align-self: center</h1>
+    <div class="flex-container">
+
+        <div class="item center">ALIGN SELF</div>
+        <div class="item center">ALIGN SELF</div>
+        <div class="item center">ALIGN SELF</div>
+        <div class="item center">ALIGN SELF</div>
+        <div class="item center">ALIGN SELF</div>
+
+    </div>
+
+    <h1>align-self: stretch</h1>
+    <div class="flex-container">
+
+        <div class="item strecth">ALIGN SELF</div>
+        <div class="item strecth">ALIGN SELF</div>
+        <div class="item strecth">ALIGN SELF</div>
+        <div class="item strecth">ALIGN SELF</div>
+        <div class="item strecth">ALIGN SELF</div>
+
+    </div>
+
+    <h1>align-self: baseline</h1>
+    <div class="flex-container">
+
+        <div class="item baseline">ALIGN SELF</div>
+        <div class="item baseline">ALIGN SELF</div>
+        <div class="item baseline">ALIGN SELF</div>
+        <div class="item baseline">ALIGN SELF</div>
+        <div class="item baseline">ALIGN SELF</div>
+
+    </div>
+    
+</body>
+</html>
